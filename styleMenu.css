@@ -1,0 +1,149 @@
+:root{
+  width: 755px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #F2F2F2;
+  margin: auto;
+}
+
+#breakfast{
+  position: relative;
+  width: 702px;
+  height: 530px;
+  margin-top: 31px;
+  margin-left: 20px
+}
+#hot{
+  position: relative;
+  width: 702px;
+  height: 410px;
+  margin-top: 48px;
+  margin-left: 20px
+}
+#salads{
+  position: relative;
+  width: 702px;
+  height: 410px;
+  margin-top: 45px;
+  margin-left: 20px
+}
+#soups{
+  position: relative;
+  width: 702px;
+  height: 530px;
+  margin-top: 45px;
+  margin-left: 20px
+}
+#main{
+  position: relative;
+  width: 702px;
+  height: 530px;
+  margin-top: 45px;
+  margin-left: 20px
+}
+
+.name{
+  color: #511604;
+  width: 121px;
+  height: 21px;
+  font-weight: 700;
+  float: left;
+}
+.block{
+  width: 702px;
+  height: 96px;
+  margin-top: 24px;
+  float: left;
+}
+span{
+  display: inline-block;
+  width: 701px;
+  height: 6px;
+  text-decoration: none;
+  background: url(./img1/wave.png) bottom repeat-x;
+  background-size: 4px;
+  margin-top: 23px;
+  float: left;
+}
+
+img {
+  /* margin-top: 24px; */
+  float: left;
+
+}
+.meal{
+  color: #B88F3D;
+  font-weight: 700;
+  height: 19px;
+  width: auto;
+  margin-left:22px;
+  margin-top:5px;
+  float: left;
+}
+.dotted{
+  height: 21px;
+  /* position: relative; */
+  overflow: hidden;
+  /* margin-left: 0px; */
+  /* margin-top: 1px; */
+  border-bottom: 2px dotted #A8A8A8;
+  /* z-index: 1; */
+}
+.dotted::after{
+  color: #949604;
+  height: 20px;
+  background-color: #F2F2F2;
+  position: absolute;
+  content: "$2.00";
+  border: none;
+  right: 0px;
+  margin-top: 3px;
+
+}
+.discription{
+  font-size: 14px;
+  height: 36px;
+  width: 536px;
+  margin-left:22px;
+  margin-top:25px;
+  color: #536772;
+  /* margin: 31px 22px 10px; */
+  float: left;
+}
+
+#breakfast .block:nth-child(4) .dotted::after,
+#soups .block:nth-child(4) .dotted::after,
+#main .block:nth-child(4) .dotted::after{
+  content: "$4,50"
+}
+
+#breakfast .block:nth-child(5) .dotted::after,
+#hot .block:nth-child(5) .dotted::after{
+  content: "$12,50"
+}
+
+#breakfast .block:nth-child(6) .dotted::after,
+#salads .block:nth-child(5) .dotted::after{
+  content: "$10,50"
+}
+
+#hot .block:nth-child(3) .dotted::after,
+#salads .block:nth-child(4) .dotted::after{
+  content: "$8,50"
+}
+
+#hot .block:nth-child(4) .dotted::after,
+#soups .block:nth-child(3) .dotted::after,
+#main .block:nth-child(3) .dotted::after{
+  content: "$6,50"
+}
+
+#soups .block:nth-child(5) .dotted::after,
+#main .block:nth-child(5) .dotted::after{
+  content: "$18,50"
+}
+
+#soups .block:nth-child(6) .dotted::after,
+#main .block:nth-child(6) .dotted::after{
+  content: "$7,15"
+}
